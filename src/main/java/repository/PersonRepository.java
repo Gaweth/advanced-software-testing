@@ -8,9 +8,9 @@ import java.util.Optional;
 public interface PersonRepository {
 
 
-    Person add(Person person);
-    Person delete(Long id);
-    Person update(Person person);
+    Person addPerson(Person person);
+    Person deletePerson(Long id);
+    Person updatePerson(Person person);
     Optional<Person>findById(Long id);
     Optional<List<Person>> findByIsPaidTrue();
 
